@@ -26,11 +26,11 @@ def write_version(version_core, pre_release=True):
     return version
 
 
-with open("README.md", "r") as f:
+with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 
-with open("requirements.txt", "r") as f:
+with open("requirements.txt", "r", encoding="utf-8") as f:
     requirements = f.read().splitlines()
 
 setup(
